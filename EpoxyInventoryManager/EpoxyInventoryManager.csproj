@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6014A72E-620C-46B7-B7E4-AD771962325F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EpoxyInventoryManager</RootNamespace>
+    <AssemblyName>EpoxyInventoryManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Amkor_logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EpoxyInventoryManagerLID1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerLID1Form.designer.cs">
+      <DependentUpon>EpoxyInventoryManagerLID1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerLID2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerLID2Form.designer.cs">
+      <DependentUpon>EpoxyInventoryManagerLID2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerSMD1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerSMD1Form.Designer.cs">
+      <DependentUpon>EpoxyInventoryManagerSMD1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerSMD2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerSMD2Form.designer.cs">
+      <DependentUpon>EpoxyInventoryManagerSMD2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerSMD3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerSMD3Form.designer.cs">
+      <DependentUpon>EpoxyInventoryManagerSMD3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerUF1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerUF1Form.designer.cs">
+      <DependentUpon>EpoxyInventoryManagerUF1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerUF2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EpoxyInventoryManagerUF2Form.designer.cs">
+      <DependentUpon>EpoxyInventoryManagerUF2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ftpclient.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EpoxyInventoryManagerLID1Form.resx">
+      <DependentUpon>EpoxyInventoryManagerLID1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EpoxyInventoryManagerLID2Form.resx">
+      <DependentUpon>EpoxyInventoryManagerLID2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EpoxyInventoryManagerSMD1Form.resx">
+      <DependentUpon>EpoxyInventoryManagerSMD1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EpoxyInventoryManagerSMD2Form.resx">
+      <DependentUpon>EpoxyInventoryManagerSMD2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EpoxyInventoryManagerSMD3Form.resx">
+      <DependentUpon>EpoxyInventoryManagerSMD3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EpoxyInventoryManagerUF1Form.resx">
+      <DependentUpon>EpoxyInventoryManagerUF1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EpoxyInventoryManagerUF2Form.resx">
+      <DependentUpon>EpoxyInventoryManagerUF2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MaterialDBDataSet.xsc">
+      <DependentUpon>MaterialDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaterialDBDataSet.xss">
+      <DependentUpon>MaterialDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Amkor_logo.ico" />
+    <Content Include="MaterialDB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
